@@ -3,6 +3,9 @@
     box-sizing: border-box;
 }
 
+
+/*Formatação do body do app*/
+
 body {
     font-family: 'Mulish', sans-serif;
     background-color: steelblue;
@@ -15,6 +18,9 @@ body {
     overflow: hidden;
     margin: 0;
 }
+
+
+/*Formatação do container que agrupo o conteúdo do formulário*/
 
 .container {
     background-color: rgba(0, 0, 0, 0.4);
@@ -31,6 +37,11 @@ body {
     text-decoration: none;
     color: lightblue;
 }
+
+
+/* FORMATAÇÃO DO BOTÃO
+* Estiliza o botão do formulário, no focus retira o outline e no active dimiui um pouco o tamanho do botão
+*/
 
 .btn {
     cursor: pointer;
@@ -52,15 +63,24 @@ body {
     transform: scale(0.97);
 }
 
+
+/*Formata o último texto do formulário*/
+
 .text {
     margin-top: 30px;
 }
+
+
+/*Formata o conjunto de dados (label + input) dentro do formulário.*/
 
 .form-control {
     position: relative;
     margin: 20px 0 40px;
     width: 300px;
 }
+
+
+/*Formata o input*/
 
 .form-control input {
     background-color: transparent;
@@ -73,11 +93,17 @@ body {
     color: #fff;
 }
 
+
+/*Retira o outline do input quando está focado e coloca a borda de baixo com azul claro*/
+
 .form-control input:focus,
 .form-control input:valid {
     outline: 0;
     border-bottom-color: lightblue;
 }
+
+
+/*Posicionamento do label dentro do form-control*/
 
 .form-control label {
     position: absolute;
@@ -85,12 +111,18 @@ body {
     left: 0;
 }
 
+
+/*Label no estado normal*/
+
 .form-control label span {
     display: inline-block;
     font-size: 18px;
     min-width: 5px;
     transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
+
+/*Estilo para quando o input está focado*/
 
 .form-control input:focus+label span,
 .form-control input:valid+label span {
